@@ -1,0 +1,265 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-container {
+  padding: 40px 60px;
+  border-radius: 25px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 380px;
+  transition: 0.4s;
+  background: rgba(255, 255, 255, 0.6);
+  color: #222;
+  backdrop-filter: blur(25px);
+
+}
+
+.weather-container:hover {
+  transform: scale(1.03);
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.city-input {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  width: 65%;
+  font-size: 1rem;
+  outline: none;
+}
+
+.weather-btn {
+  padding: 10px 15px;
+  background: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.weather-btn:hover {
+  background: #74b9ff;
+  transform: scale(1.05);
+}
+
+.error {
+  color: #ffeaa7;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 20px;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+}
+
+.weather-card span {
+  color: #ffeaa7;
+  font-weight: 600;
+}
+
+.weather-card p {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+  .weather-container {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .city-input {
+    width: 60%;
+    font-size: 0.9rem;
+  }
+
+  .weather-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .weather-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 🌗 Light and Dark Mode Support */
+@media (prefers-color-scheme: light) {
+  body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #222;
+  }
+
+
+  .weather-container {
+    background: rgba(255, 255, 255, 0.6);
+    color: #222;
+  }
+
+  .weather-btn {
+    background: #0077ff;
+  }
+
+  .weather-btn:hover {
+    background: #4aa8ff;
+  }
+
+  .weather-card {
+    background: rgba(255, 255, 255, 0.75);
+    color: #222;
+  }
+
+  .weather-card span {
+    color: #0056b3;
+  }
+
+  .error {
+    color: #c0392b;
+  }
+}
+
+body.dark-mode {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+body.dark-mode .weather-container {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #222;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #555;
+}
+
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+/* 🌗 Toggle button styling */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #00bcd4, #007bff);
+}
+
+/* 🌗 Smooth Theme Transition */
+body {
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.weather-container,
+.weather-card {
+  transition: all 0.8s ease;
+}
+
+/* 🌙 Dark mode */
+body.dark-mode {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f5f5f5;
+}
+
+body.dark-mode .weather-container {
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  box-shadow: 0 4px 25px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .weather-card {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e8e8e8;
+  backdrop-filter: blur(8px);
+}
+
+/* 🌤️ Light mode enhancements */
+.weather-container {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card {
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
