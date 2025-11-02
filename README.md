@@ -1,16 +1,33 @@
-# React + Vite
+ **Intelligent Weather Insight and City Forecast Web Application**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive web application built with **React.js** that provides **real-time weather updates** for any city using the **OpenWeather API**.  
+This project helps users make informed decisions about outdoor plans by showing accurate temperature, humidity, and weather conditions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Real-time weather data for any city worldwide  
+- Displays temperature, humidity, wind speed, and weather status  
+- Search functionality for dynamic city lookup  
+- Responsive UI built with **Tailwind CSS**  
+- Error handling for invalid city names and API issues  
+- Deployed on **Vercel / CodeSandbox** for public access
 
-## React Compiler
+- **Technologies Used**
+| Category | Tools / Libraries |
+|-----------|------------------|
+| Frontend | React.js, JavaScript (ES6+), HTML5, CSS3 |
+| Styling | Tailwind CSS |
+| API | OpenWeather API |
+| State Management | React Hooks (`useState`, `useEffect`) |
+| Deployment | Vercel / CodeSandbox |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ Installation & Setup
 
-## Expanding the ESLint configuration
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/weather-app.git
+   cd weather-app
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  **Author**
+  Muthukumaran M
