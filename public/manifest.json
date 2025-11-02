@@ -1,0 +1,21 @@
+{
+  "name": "Weather Now",
+  "short_name": "WeatherNow",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f0f0",
+  "theme_color": "#4facfe",
+  "description": "Get live weather updates instantly.",
+  "icons": [
+    {
+      "src": "/icons/weather-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/weather-icon-Copy.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
